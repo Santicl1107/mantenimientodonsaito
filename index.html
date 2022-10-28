@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c26f1a4cec.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>MDS</title>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="barra">
+        <div class="logo">
+            <img src="imagenes/logo_dms.jpg" alt="" class="imagen">
+        </div>
+        <div class="botones">
+            <a href="index.html" class="boton"><div><i class="fa-solid fa-house"></i><span>Inicio</span> </a></div>
+            <div><a href="#quien" class="boton"><i class="fa-solid fa-user"></i><span>¿Quienes somos?</span> </a></div>
+            <div><a href="#servicio" class="boton"><i class="fa-solid fa-screwdriver-wrench"></i><span>Servicios</span> </a></div>
+            <div><a href="#cita" class="boton"><i class="fa-solid fa-calendar-days"></i><span>Agendar Cita</span> </a></div>          
+        </div>
+    </nav>
+    <!-- Carril de imagenes -->
+    <section>
+        
+        <div class="slider">
+            <ul>
+                <li>
+                    <img src="/imagenes/img1_1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="/imagenes/img2_1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="/imagenes/img3_1.jpg" alt="">
+                </li>
+                <li>
+                    <img src="/imagenes/img4_1.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <!-- Quienes somos -->
+        <div class="qs">
+            <h2 id="quien">¿Quienes Somos?</h2>
+            <p>Mantenimientos Don Saito es una empresa de mantenimiento y reparación de computadores, que ofrece sus servicios a domicilio para hogares en Cúcuta, en reparación preventiva o correctiva de hardware y software. Actualmente ofrecemos soporte técnico para sistemas operativos Windows y Mac tanto en hogares, como en oficinas dentro de la gran variedad de marcas de computadores que hay en el mercado. De igual forma, tenemos un amplio catálogo de servicios, orientados a le gestión de las TIC para pequeñas y medianas empresas, que podrán encontrar en esta página web.</p>
+
+        </div>
+        <!-- Tabla de servicios -->
+        <div>
+            <h2 class="serv" id="servicio">Servicios</h2>
+        </div>
+        <div class="container flex text-center">
+            <div class="columna">
+                <h2>Mantenimiento Preventivo</h2>
+                <p class="precio">$40.000</p>
+                <p>Ayuda a prevenir futuros daños en el equipo, se realiza en intervalos regulares de 3 meses</p>
+                <hr>
+                <p>Incluye:</p>
+                <p>Limpieza del equipo</p>
+                <p>Revisión de posibles daños</p>
+                <p>Servicio a domicilio</p>
+                <hr>
+                <a href="cita.html" class="btn-precio">Comprar</a>
+            </div>
+            <div class="columna">
+                <h2>Mantenimiento Correctivo</h2>
+                <p class="precio">$50.000</p>
+                <p>Se lleva a cabo para reparar el daño encontrado en el mantenimiento preventivo</p>
+                <hr>
+                <p>Incluye:</p>
+                <p>Revisión general</p>
+                <p>Reparación de daños generales</p>
+                <p>Servicio a domicilio</p>
+                <hr>
+                <a href="cita.html" class="btn-precio">Comprar</a>
+            </div>
+            <div class="columna">
+                <h2>Cambio de Piezas</h2>
+                <p class="precio">$20.000</p>
+                <p>Cambio o inclusión de piezas para mejorar el rendimiento de tu equipo</p>
+                <hr>
+                <p>Incluye:</p>
+                <p>Cambio maximo de piezas 2</p>
+                <p>Servicio a domicilio</p>
+                <p>No incluye las piezas a cambiar</p>
+                <hr>
+                <a href="cita.html" class="btn-precio">Comprar</a>
+            </div>
+            <div class="columna">
+                <h2>Instalacion de Sistema Operativo</h2>
+                <p class="precio">$80.000</p>
+                <p>Consiste en la instalación del sistema operativo asegurando la compatibilidad con el equipo</p>
+                <hr>
+                <p>Incluye:</p>
+                <p>Windows 7,10,11</p>
+                <p>Microsft office 2016</p>
+                <p>Antivirus</p>
+                <hr>
+                <a href="cita.html" class="btn-precio">Comprar</a>
+            </div>
+            <div class="columna">
+                <h2>Instalacion de Programas</h2>
+                <p class="precio">$20.000</p>
+                <p></p>
+                <hr>
+                <p>Incluye:</p>
+                <p>Microsft office 2016</p>
+                <p>Antivirus</p>
+                <p>Programas personalizados</p>
+                <p>Servicio a domicilio</p>
+                <p>cantidad maxima de instalación de 2 programas</p>
+                <hr>
+                <a href="cita.html" class="btn-precio">Comprar</a>
+            </div>
+        </div>
+        <!-- Boton de cita -->
+        <div>
+            <a href="cita.html" class="boton-cita" id="cita">Agendar Cita</a>
+        </div>  
+    </section>
+        <!-- Footer -->
+    <footer>
+        <div class="ft-margen">
+            <h3>Contacto</h3>
+            <a href="https://wa.me/573213143421" class="contacto" name="contact"><i class="fa-brands fa-whatsapp"></i> +573213143421</a><br>
+            <a href="mailto:santi2001.07@gmail.com?subject=Solicito%20informacion" class="contacto"><i class="fa-regular fa-envelope"></i> santi2001.07@gmail.com</a>
+            <p>Cúcuta, Norte de Santander, Colombia</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

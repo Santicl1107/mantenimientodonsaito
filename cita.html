@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c26f1a4cec.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="barra">
+        <div class="logo">
+            <img src="imagenes/logo_dms.jpg" alt="" class="imagen">
+        </div>
+        <div class="botones">
+            <a href="index.html" class="boton"><div><i class="fa-solid fa-house"></i>Inicio </a></div>
+            <div><a href="#quien" class="boton"><i class="fa-solid fa-user"></i>¿Quienes somos? </a></div>
+            <div><a href="#servicio" class="boton"><i class="fa-solid fa-screwdriver-wrench"></i> Servicios </a></div>
+            <div><a href="#cita" class="boton"><i class="fa-solid fa-calendar-days"></i>Agendar Cita </a></div>          
+        </div>
+    </nav>
+    <!-- Formulario -->
+    <section>
+        <h1>
+            Agendar Cita
+        </h1>
+        <form action="https://formsubmit.co/mantenimientodonsaito@gmail.com" method="post">
+            <div class="formu">
+                <div class="elemt-f"><label>Nombre:</label><input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required></div>
+                <div class="elemt-f"><label>Apellido:</label><input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required></div>
+                <div class="elemt-f"><label>Cedula:</label><input type="text" name="documento" id="" placeholder="Ingrese su documento" required></div>
+                <div class="elemt-f"><label>Correo:</label><input type="email" name="correo" id="" placeholder="Ingrese su correo electronico" required></div>
+                <div class="elemt-f"><label>Telefono:</label><input type="text" name="telefono" id="" placeholder="Ingrese su telefono" required></div>
+                <div class="elemt-f"><label>Dirección:</label><input type="text" name="direccion" id="" placeholder="Ingrese su direccion" required></div>
+                <div class="elemt-f"><label>Tipo de computador:</label>
+                <select id="" name="tipo_de_pc" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="De Mesa">De Mesa</option>
+                    <option value="Laptop">Laptop</option>
+                    <option value="Todo en uno">Todo en uno</option>
+                </select>
+                </div>
+                <div class="elemt-f"><label>Servicio:</label>
+                <select id="" name="servicio" required>
+                    <option value="">Selecciona un servicio</option>
+                    <option value="Mantenimiento Preventivo">Mantenimiento Preventivo</option>
+                    <option value="Mantenimiento Correctivo">Mantenimiento Correctivo</option>
+                    <option value="Cambio de Piezas">Cambio de Piezas</option>
+                    <option value="Instalacion de Sistema Operativo">Instalacion de Sistema Operativo</option>
+                    <option value="Instalacion de Programas">Instalacion de Programas</option>
+                </select>
+                </div>
+                <div class="elemt-f"><label>Fecha:</label><input type="date" id="" name="fecha_de_mantenimiento" required></div>
+                <div class="elemt-f"><label>Observaciones:</label><textarea name="Observaciones" id="" cols="30" rows="10" placeholder="Ingrese alguna observacion que se deba tener en cuenta"></textarea></div>
+                <div><input type="submit" value="Enviar"></div>
+                <p>*La confirmacion de su cita le sera enviada a su correo electronico junto con su factura de compra.</p>
+            </div>
+        </form>
+    </section>
+        <!-- Footer -->
+    <footer>
+        <div class="ft-margen">
+            <h3>Contacto</h3>
+            <a href="https://wa.me/573213143421" class="contacto" name="contact"><i class="fa-brands fa-whatsapp"></i> +573213143421</a><br>
+            <a href="mailto:santi2001.07@gmail.com?subject=Solicito%20informacion" class="contacto"><i class="fa-regular fa-envelope"></i> santi2001.07@gmail.com</a>
+            <p>Cúcuta, Norte de Santander, Colombia</p>
+        </div>
+    </footer>
+</body>
+</html>
