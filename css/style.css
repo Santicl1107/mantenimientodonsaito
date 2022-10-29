@@ -2,6 +2,9 @@
 *{
     margin: 0px;
 }
+
+html {  overflow-x:hidden; }
+
 body,html{
     height: 100%;
 }
@@ -10,9 +13,9 @@ body,html{
 body{
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    background-color: #393E46;
-    color: #EEEEEE;
+    /*font-size: 18px;*/
+    background-color: #F3F3F3;
+    color: #303841;
 }
 
 /* Barra de navegación */
@@ -21,7 +24,7 @@ body{
     height: 120px;
     display: flex;
     justify-content: space-between;
-    background-color: #222831;
+    background-color: #2185D5;
     align-items: center;
 }
 
@@ -44,10 +47,11 @@ body{
 .botones a{
     text-decoration: none;
     color: #EEEEEE;
+    font-size: 20px;
 }
 
 .botones a:hover{
-    color: #BF94FF;
+    color: #303841;
 }
 
 /* Iconos de la barra de navegación */
@@ -125,13 +129,14 @@ section{
 /* Quienes somos */
 .qs{
     margin: 100px;
-    background-color: #393E46;
     width: 100%;
-    height: 250px;
+    background: #2185D5;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 20px;
+    font-size: 25px;
+    color: #F3F3F3;
+    padding: 20px;
   }
 
 h2{
@@ -146,7 +151,9 @@ h2{
 /* Tabla de servicios */
 .serv{
     padding: 0 0 20px 0;
+    font-size: 2.5rem;
 }
+
 .container{
     margin: 0 auto;
     width: 90%;
@@ -159,9 +166,9 @@ h2{
     text-align: center;
 }
 .columna{
-    background: #222831;
-    color: #EEEEEE;
-    border: 1px solid #7224BF;
+    background: #F3F3F3;
+    color: #303841;
+    border: 5px solid #2185D5;
     margin: 0 auto;
     padding: 10px;
     border-radius: 5px;
@@ -174,10 +181,10 @@ h2{
 }
 .precio{
     font-size: 50px;
-    color: #7C1ED9 ;
+    color: #2185D5 ;
 }
 .btn-precio{
-    background: #222831;
+    background: #2185D5;
     display: block;
     padding: 10px;
     color: #EEEEEE;
@@ -186,16 +193,16 @@ h2{
     margin-bottom: 10px;
 }
 .btn-precio:hover{
-    background:#BF94FF ;
+    background: #1963B3 ;
 }
 
 /* boton de cita */
 
 .boton-cita{
-    background: #BF94FF;
+    background: #2185D5;
     display: block;
     padding: 20px;
-    color: #222831;
+    color: #F3F3F3;
     text-decoration: none;
     border-radius: 8px;
     font-size: 1.5rem;
@@ -203,102 +210,142 @@ h2{
 }
 
 .boton-cita:hover{
-    background: #393E46;
-    color: #EEEEEE;
+    background: #1963B3;
+    color: #F3F3F3;
 }
 
 /* footer */
 footer{
     height: 150px;
-    background: #222831;
+    background: #2185D5;
     display: flex;
-
+    color: #F3F3F3;
 }
 
 footer a{
     text-decoration: none;
-    color: #EEEEEE;
+    color: #F3F3F3;
 }
 
 footer a:hover{
-    color: #BF94FF;
+    color: #303841;
 }
 
 .ft-margen{
-   margin: 20px;
+    display: flex;
+    margin: 20px;
+}
+
+.acerca{
+    margin-right: 130px;
 }
 
 /* formulario */
 
-h1{
-    margin: 50px;
+.form{
+    background-color: #F3F3F3;
+    margin: 40px 0 40px 0;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -2px rgb(33, 133, 213);
+    text-align: center;
 }
 
-.formu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #393E46;
-    width: 550px;
-    margin: 0px 0px 50px 0px;
-    padding: 20px;
-    border-radius: 8px;
+.form_title{
+    font-size: 2rem;
+    margin-bottom: .5em;
 }
 
-.elemt-f{
-    display: flex;
-    justify-content: space-between;
+.form_container{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+
+.form_group{
+    position: relative;
+    --color: #5757577e;
+}
+
+.form_input{
     width: 100%;
-    margin: 10px;
-}
-
-input[type=text], input[type=email]{
-    border-radius: 5px;
-    background: #EEEEEE;
-    width: 250px;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
     height: 30px;
     border: none;
-    color: #222831;
-}
-
-select, input[type=date]{
-    width: 256px;
-    height: 30px;
-    border: none;
-    border-radius: 4px;
-}
-
-textarea{
-    resize: none;
-    width: 250px;
-    border-radius: 5px;
-    background: #EEEEEE;
-}
-
-input[type=text]:focus, input[type=email]:focus, input[type=date]:focus, select:focus, textarea:focus{
-    border: 3px solid #BF94FF;
     outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
 }
 
-input[type=submit]{
-    margin: 0 0 10px 0;
-    background: #222831;
-    display: block;
-    padding: 10px;
-    color: #EEEEEE;
-    border-radius: 8px;
+.form_list{
+    width: 100%;
+    background: none;
+    font-size: 1rem;
+    padding: .6em .3em;
     border: none;
-    width: 80px;
     outline: none;
+    border-bottom: 1px solid var(--color);
+    color: #303841;
 }
 
-input[type=submit]:hover{
-    background: #BF94FF;
-    color: #222831;
+.form_input:not(:placeholder-shown){
+    color: #303841;
 }
 
-.formu p{
-    font-size: 0.75rem;
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    font-size: 13px;
+    color: #2185D5;
+}
+
+
+.form_label{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(15px);
+    transition: transform .5s, color .3s;
+}
+
+.form_submit{
+    background: #2185D5;
+    color: #F3F3F3;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+
+.form_submit:hover{
+    background: #1963B3;
+
+}
+
+.form_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #2185D5;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form_input:focus ~ .form_label,
+.form_input:not(:placeholder-shown) ~ .form_label{
+    transform: scale(1);
 }
 
 /* Responsive */
