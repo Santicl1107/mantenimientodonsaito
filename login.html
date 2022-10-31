@@ -11,16 +11,20 @@
 </head>
 <body>
     <body>
+      <php
+        include_once ("conexion/conexion.php");
+        Cconexion::ConexionDB();
+      ?>
         <div class="center">
             <h1>Iniciar Sesion</h1>
-            <form class="forms" method="post">
+            <form class="forms" action="conexion/validar.php" method="post">
               <div class="txt_field">
-                <input type="text" class="inp" required>
+                <input type="text" class="inp" name="usuario" required>
                 <span></span>
                 <label>Usuario</label>
               </div>
               <div class="txt_field">
-                <input type="password" required>
+                <input type="password" name="contrasena" required>
                 <span></span>
                 <label>Contraseña</label>
               </div>
