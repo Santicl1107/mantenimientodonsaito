@@ -39,9 +39,7 @@ body{
 .botones{
     display: flex;
     align-items: center;
-    width: 50%;
     justify-content: space-around;
-    margin-right: 23%;
 }
 
 .botones a{
@@ -59,24 +57,25 @@ i{
     font-size: 1.5em;
 }
 
-.IR{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.IR a{
-    text-decoration: none;
-    color: #EEEEEE;
-}
-
-.IR a:hover{
-    color: #BF94FF;
-}
-
 .boton i{
     padding: 20px;
+}
+
+.boton2{
+    color: #F3F3F3;
+    text-decoration: none;
+    font-size: 20px;
+}
+.boton2:hover{
+    color: #303841;
+}
+
+.boton2 i{
+    padding: 20px;
+}
+
+.iniciar{
+    margin-right: 20px;
 }
 
 /* Cuerpo */
@@ -262,6 +261,13 @@ footer a:hover{
 
 .acerca{
     margin-right: 130px;
+}
+
+.redes{
+    width: 140px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 /* formulario */
@@ -474,6 +480,38 @@ footer a:hover{
     text-decoration: underline;
   }
   
+/* Politica de privacidad */
+
+.poli{
+    margin: 50px;
+    text-align: left;
+}
+
+.poli h1{
+    font-size: 35px;
+    padding: 15px;
+}
+
+.poli h3{
+
+    font-size: 25px;
+    padding: 15px;
+}
+
+.poli h2{
+    font-size: 30px;
+    padding: 15px;
+}
+
+.poli p{
+    font-size: 20px;
+    padding: 5px;
+}
+
+.preguntas{
+    text-align: left;
+}
+
 /* Responsive */
 
 @media (max-width: 1260px){
