@@ -127,16 +127,40 @@ section{
 }
 
 /* Quienes somos */
+
+.grup_qs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+
 .qs{
-    margin: 100px;
+    
     width: 100%;
+    height: auto;
+    margin-top: 50px;
     background: #2185D5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 25px;
+    justify-content: flex-start;
     color: #F3F3F3;
     padding: 20px;
+    font-size: 25px;
+  }
+
+.qs2{
+    
+    width: 698px;
+    height: auto;
+    margin: 10px;
+    background: #2185D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #F3F3F3;
+    padding: 20px;
+    font-size: 25px;
   }
 
 h2{
