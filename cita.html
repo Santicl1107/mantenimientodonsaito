@@ -25,7 +25,7 @@
     </nav>
     <!-- Formulario -->
     <section>
-        <form class="form" action="" method="post">
+        <form class="form" action="conexion/citas.php" method="post">
 
             <h2 class="form_title" id="citaa">
                 Agendar Cita
@@ -33,49 +33,64 @@
 
             <div class="form_container">
                 <div class="form_group">
-                    <input type="text" id="nombre" class="form_input" placeholder=" ">
+                    <input type="text" name="nombre" class="form_input" placeholder=" ">
                     <label for="nombre" class="form_label">Nombre:</label>
                     <span class="form_line"></span>
                 </div>
                 <div class="form_group">
-                    <input type="text" id="apellido" class="form_input" placeholder=" ">
+                    <input type="text" name="apellido" class="form_input" placeholder=" ">
                     <label for="apellido" class="form_label">Apellido:</label>
                     <span class="form_line"></span>
                 </div>
                 <div class="form_group">
-                    <input type="text" id="cedula" class="form_input" placeholder=" ">
+                    <input type="text" name="documento" class="form_input" placeholder=" ">
                     <label for="cedula" class="form_label">Documento:</label>
                     <span class="form_line"></span>
                 </div>
                 <div class="form_group">
-                    <input type="text" id="telefono" class="form_input" placeholder=" ">
+                    <input type="text" name="telef" class="form_input" placeholder=" ">
                     <label for="telefono" class="form_label">Telefono:</label>
                     <span class="form_line"></span>
                 </div>
                 <div class="form_group">
-                    <input type="email" id="correo" class="form_input" placeholder=" ">
+                    <input type="email" name="email" class="form_input" placeholder=" ">
                     <label for="correo" class="form_label">Correo:</label>
                     <span class="form_line"></span>
                 </div>
                 <div class="form_group">
-                    <select class="form_list" name="" id="">
-                        <option value="seleccione">Seleccione un Servicio</option>
-                        <option value="seleccione" name="preventivo">Mantenimiento Preventivo</option>
-                        <option value="seleccione" name="correctivo">Mantenimiento Correctivo</option>
-                        <option value="seleccione" name="piezas">Cambio de Piezas</option>
-                        <option value="seleccione" name="so">Instalación de Sistema Operativo</option>
-                        <option value="seleccione" name="programas">Instalación de Programas</option>
+                    <input type="text" name="direccion" class="form_input" placeholder=" ">
+                    <label for="direccion" class="form_label">Direccion:</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <select class="form_list" name="servicio">
+                        <option>Seleccione un Servicio</option>
+                        <option name="servicio">Mantenimiento Preventivo</option>
+                        <option name="servicio">Mantenimiento Correctivo</option>
+                        <option name="servicio">Cambio de Piezas</option>
+                        <option name="servicio">Instalación de Sistema Operativo</option>
+                        <option name="servicio">Instalación de Programas</option>
                     </select>
                 </div>
                 <div class="form_group">
-                    <select class="form_list" name="" id="">
-                        <option value="seleccione">Seleccione su Tipo de Computador</option>
-                        <option value="seleccione" name="de_mesa">Computador de Mesa</option>
-                        <option value="seleccione" name="todo_en_uno">Todo en Uno</option>
-                        <option value="seleccione" name="laptop">Laptop</option>
+                    <select class="form_list" name="computador">
+                        <option>Seleccione su Tipo de Computador</option>
+                        <option name="computador">Computador de Mesa</option>
+                        <option name="computador">Todo en Uno</option>
+                        <option name="computador">Laptop</option>
                     </select>
                 </div>
-                <input type="submit" class="form_submit" value="Enviar">
+                <div class="form_group">
+                    <textarea name="observaciones" cols="30" rows="10" class="form_area" placeholder=" "></textarea>
+                    <label for="correo" class="form_label">Observaciones:</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="date" min="2022-11-04" max="2022-11-12" step="1" name="fecha" class="form_input"  placeholder=" ">
+                    <label for="correo" class="form_label">Fecha:</label>
+                    <span class="form_line"></span>
+                </div>
+                <input type="submit" name="enviar" class="form_submit" value="Enviar">
             </div>
 
         </form>

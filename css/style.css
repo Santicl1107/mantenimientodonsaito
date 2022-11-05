@@ -88,8 +88,8 @@ section{
 /* Carril de imagenes */
 
 .slider{
-    width: 720px;
-    height: 600px;
+    width: 1207px;
+    height: 720px;
     overflow: hidden;
     margin: 50px 0 0 0;
 }
@@ -107,8 +107,8 @@ section{
 }
 
 .slider img{
-    width: 720px;
-    height: 600px;
+    width: 1217px;
+    height: 720px;
 }
 
 @keyframes cambio{
@@ -323,6 +323,20 @@ footer a:hover{
     color: #303841;
 }
 
+.form_area{
+    width: 100%;
+    background: none;
+    color: #706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+    resize: none;
+}
+
 .form_input:not(:placeholder-shown){
     color: #303841;
 }
@@ -332,6 +346,18 @@ footer a:hover{
     transform: translateY(-12px) scale(.7);
     transform-origin: left top;
     font-size: 13px;
+    color: #2185D5;
+}
+
+.form_area:not(:placeholder-shown){
+    color: #303841;
+}
+
+.form_area:focus + .form_label,
+.form_area:not(:placeholder-shown) + .form_label{
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    font-size: 20px;
     color: #2185D5;
 }
 
@@ -510,6 +536,10 @@ footer a:hover{
 
 .preguntas{
     text-align: left;
+}
+
+.titulo{
+    color: #F3F3F3;
 }
 
 /* Responsive */

@@ -3,11 +3,11 @@ include('conexion.php');
 $usuario=$_POST['usuario'];
 $contrasena=$_POST['contrasena'];
 session_start();
-$SESION['usuario']=$usuario;
+$SESION['registro']=$usuario;
 
 $con = mysqli_connect($host, $user, $pass, $bd, $puerto);
 
-$consulta="SELECT*FROM usuarios where usuario='$usuario' and contrasena='$contrasena'";
+$consulta="SELECT*FROM registro where usuario='$usuario' and contrasena='$contrasena'";
 $resultado=mysqli_query($con,$consulta);
 
 $filas=mysqli_num_rows($resultado);
