@@ -10,11 +10,14 @@ $con = mysqli_connect($host, $user, $pass, $bd, $puerto);
 $consulta="SELECT*FROM registro where usuario='$usuario' and contrasena='$contrasena'";
 $resultado=mysqli_query($con,$consulta);
 
-$filas=mysqli_num_rows($resultado);
+$filas=mysqli_fetch_array($resultado);
 
-if($filas){
+if($filas['rol_id']==1){#administrador
+    header("location:../administrador.php");
+}elseif($filas['rol_id']==2){#cliente
     header("location:../index.html");
-}else{
+}
+else{
     ?>
     <?php
     include("../login.html");

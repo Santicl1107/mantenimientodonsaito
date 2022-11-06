@@ -55,38 +55,13 @@ include("conexion/conexion.php")
             <th>Observaciones</th>
             <th>Fecha</th>
         </thead>
-        <tbody>
-        
-        <?php 
-            /*$inc = include("conexion/conexion.php");
-            if ($inc) {
-	            $consulta = "SELECT * FROM citas";
-	            $resultado = mysqli_query($con,$consulta);
-	        if ($resultado) {
-		        while ($row = mysqli_fetch_array($resultado)) {
-	            $id = $row['ID'];
-	            $nombre = $row['nombre'];
-	            $apellido = $row['apellido'];
-	            $documento = $row['documento'];
-                $telefono = $row['telefono'];
-                $correo = $row['correo'];
-                $direccion = $row['direccion'];
-                $servicio = $row['servicio'];
-                $computador = $row['computador'];
-                $observaciones = $row['observaciones'];
-                $fecha = $row['fecha'];
-                
-            }
-        }
-*/?>    
+        <tbody>   
             <?php
 	            $query = " SELECT * FROM citas";
 	            $resultado= mysqli_query($con,$query);
 	                    
 	            while($row = mysqli_fetch_array($resultado)){ 
-	                    	
-
-?>
+            ?>
             <tr>
                 <td><?php echo $row['ID']?></td>
                 <td><?php echo $row['nombre']?></td>
