@@ -37,7 +37,7 @@ include("conexion/conexion.php")
         <div class="titulo">
             <h1>Administracion de Citas</h1>      
         </div>
-        <div class="iniciar"><a href="conexion/cerrarsesion.php" class="boton2"><i class="fa-solid fa-user-lock"></i><span>Cerrar Sesion</span></a></div>
+        <div class="iniciar"><a href="conexion/cerrarsesion.php" class="boton2"><i class="fa-solid fa-user-unlock"></i><span>Cerrar Sesion</span></a></div>
     </nav>
 
     <div class="container" style="margin-top: 50px;padding: 5px">
