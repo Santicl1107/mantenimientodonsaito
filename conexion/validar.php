@@ -15,7 +15,7 @@ $filas=mysqli_fetch_array($resultado);
 if($filas['rol_id']==1){#administrador
     header("location:../administrador.php");
 }elseif($filas['rol_id']==2){#cliente
-    header("location:../index.html");
+    header("location:../indexx.html");
 }
 else{
     ?>

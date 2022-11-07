@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost:3310
--- Tiempo de generación: 05-11-2022 a las 06:05:25
+-- Tiempo de generación: 07-11-2022 a las 19:30:27
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 8.1.10
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `mds`
 --
+CREATE DATABASE IF NOT EXISTS `mds` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `mds`;
 
 -- --------------------------------------------------------
 
